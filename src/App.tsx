@@ -28,7 +28,7 @@ const router = createBrowserRouter(
         <Route path="/tenants/add_tenant" element={<RegisterTenant />} />
         <Route path="/tenant/:_id/view" element={<ShowTenantDetails />} />
         <Route path="/tenant/:_id/update" element={<UpdateTenant />} />
-      </Route>
+      </Route>  
 
       <Route path="*" element={<PageNotFound />} />
     </Route>

@@ -17,7 +17,7 @@ const TenantShowModal = ({ tenantId }: Props) => {
 
     const { tenant, isLoading } = useTenant(tenantId);
 
-    console.log(tenantId);
+    // console.log(tenantId);
 
 
     return (

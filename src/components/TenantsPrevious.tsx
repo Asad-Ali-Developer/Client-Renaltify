@@ -53,7 +53,7 @@ import {
     // This hook is for getting all the tenants
     const { tenants, totalTenants, activeTenants } = useAllTenants({ _id, userName });
   
-    console.log(`Active tenants: ${activeTenants}, TotalTenants: ${totalTenants}`);
+    // console.log(`Active tenants: ${activeTenants}, TotalTenants: ${totalTenants}`);
   
     // This hook is for deleting a tenant
     const delTenant = useDeleteTenant();
@@ -95,7 +95,7 @@ import {
   
     const openDeleteDialog = (tenant: Tenant) => {
       setSelectedTenant(tenant);
-      console.log(tenant);
+      // console.log(tenant);
       onOpen();
     };
   

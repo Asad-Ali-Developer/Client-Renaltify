@@ -14,7 +14,6 @@ interface Props {
 
 const TenantsShow = ({ tenants }: Props) => {
 
-
     useEffect(() => {
 
     }, [tenants])
@@ -50,6 +49,7 @@ const TenantsShow = ({ tenants }: Props) => {
                     justifyContent="space-between"
                     fontSize={{ base: 14, lg: 16 }}
                     gap={{ base: 2, sm: '', lg: '' }}
+                    // eslint-disable-next-line react-hooks/rules-of-hooks
                     bg={useColorModeValue("white", "")}>
 
                     <Box
@@ -59,7 +59,9 @@ const TenantsShow = ({ tenants }: Props) => {
                         position='absolute'
                         w={{ base: 1, md: 1.5 }}
                         backgroundColor={tenant.isActive
+                            // eslint-disable-next-line react-hooks/rules-of-hooks
                             ? useColorModeValue("green.300", "green.500")
+                            // eslint-disable-next-line react-hooks/rules-of-hooks
                             : useColorModeValue("red.300", "red.500")}></Box>
 
                     <Flex

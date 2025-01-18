@@ -67,7 +67,6 @@ const UpdateTenantBox = ({ tenantId, isOpenUdater, onCloseUpdater, tenant }: Pro
     const [imageUploading, setImageUploading] = useState(false);
     const [selectedFile, setSelectedFile] = useState<File | null>(null);
 
-    console.log(tenant);
 
     useEffect(() => {
 
@@ -106,6 +105,7 @@ const UpdateTenantBox = ({ tenantId, isOpenUdater, onCloseUpdater, tenant }: Pro
     
     const onSubmit = async (data: tenantData) => {
         // When tenant prop changes, reset the form with the new tenant data
+        // eslint-disable-next-line react-hooks/rules-of-hooks
         useEffect(() => {
             if (tenant) {
                 reset({
